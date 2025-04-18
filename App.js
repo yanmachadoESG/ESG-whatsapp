@@ -1,3 +1,12 @@
+const express = require("express");
+const app = express();
+const port = process.env.PORT || 3000;
+
+app.get("/", (req, res) => {
+  res.send("Bot ESG rodando com sucesso!");
+});
+
+// aqui já deve estar o resto do seu código...
 const express = require('express');
 const app = express();
 app.use(express.json());
